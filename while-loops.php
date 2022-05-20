@@ -33,6 +33,7 @@
       }
     echo "<br/>";
     echo "count: {$count}";
+    //!while loops keep going WHILE the statement is TRUE
    ?>
 
 
