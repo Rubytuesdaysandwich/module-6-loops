@@ -30,7 +30,7 @@ for($count=0;$count<= 10;$count ++){
 echo $count .", ";
 }
 ?>
-
+<br/>
 <?php
 for($count=20;$count > 0;$count --){
     if($count % 2 == 0){
@@ -38,18 +38,8 @@ for($count=20;$count > 0;$count --){
     }else{
         echo "{$count} is odd.<br/>";
     }
-
-
-
 }
-
-
-
 ?>
-
-
-
-<?php?>
 
   </body>
 </html>
