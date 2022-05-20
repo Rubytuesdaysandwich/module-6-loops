@@ -8,7 +8,7 @@
   </head>
   <body>
       <?php
-        //!while loops operate like this
+        //! FOR loops operate like this
         //* for loops have three sections separated by semi colons
         //* part 1 initialize the expression only ran once
         //*part 2 test expression checked on each loop like a while loop
