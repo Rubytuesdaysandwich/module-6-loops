@@ -32,11 +32,12 @@ echo $count .", ";
 ?>
 <br/>
 <?php
-for($count=20;$count > 0;$count --){
+//example for add if else statment inside for loop
+for($count=20;$count > 0;$count --){//counting down
     if($count % 2 == 0){
-        echo "{$count} is even.<br/>";
+        echo "{$count} is even.<br/>";//return is even
     }else{
-        echo "{$count} is odd.<br/>";
+        echo "{$count} is odd.<br/>";//return is odd
     }
 }
 ?>
