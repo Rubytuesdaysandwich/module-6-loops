@@ -36,8 +36,10 @@ for loop:
         <br/>
 for loop:
     <?php
-
-
+    $items =array(1=>"Item A",2=>"Item B",3=>"Item C",4=>"Item D",5=>"Item E",6=>"Item F",);
+    for($items=0;$items<=6;$items++){
+        echo $items . [];
+    }
     
         
         
