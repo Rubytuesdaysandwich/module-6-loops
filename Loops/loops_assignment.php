@@ -18,12 +18,30 @@ $abc ++;//increment by 1
 do-while loop:
 <?php
 //do-while loop
-<do-while>
-
-</do-while>
-
-
+//puts the condition check last it will continue to go until $xyz <= 9
+$xyz=0;
+do{
+echo "xyz ";
+$xyz ++;
+} while($xyz <=9);
 ?>
+<br/>
+for loop:
+    <?php
+    //for loop initialize, test, runs during each loop separated by 3 semicolons.
+        for($num=0;$num<=9;$num++){
+            echo $num . " ";
+        }
+        ?>
+        <br/>
+for loop:
+    <?php
+
+
+    
+        
+        
+        ?>
 
 
 
