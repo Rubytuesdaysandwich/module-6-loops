@@ -38,11 +38,12 @@
 4 for loop:
         <?php
         echo '<br>';
-        $forarray =array("1.Item A","2.Item B","3.Item C","4.Item D","5.Item E","6.Item F",);//holding array items 
-        for($i=0;$i<=5;$i++){//going though 0 through 5 loops 5 times
-            echo $forarray[$i];//every time the for loop, loops it goes to the $forarray and grabs a value from the list.
+        $alphabet = "A";
+        for($i=1;$i<=6;$i++){//going though 0 through 5 loops 5 times
+            echo $i . ".";//list of 1 through 6  concatenating a .
+            echo "Item ".$alphabet++;
             echo '<br>';//this creates a line break every time it is looped through.
-
+         
         }
         ?>
         <br/>
@@ -55,7 +56,7 @@ PART 2:<br/>
         $squares= array(1,2,3,4,5,6,7,8,9,10,11,12);//assigning 1-2 to $ squares to be called later in the for loop
         for($i=0;$i<=11;$i++){//starts at 0 loops through less than or equal to 11 times.
         echo sqrt($squares[$i]); //echo the sqrt of $squares
-        echo'<br/>';//line break
+        echo'<br>';//line break
         }   
         ?>
     </sup>
@@ -79,17 +80,25 @@ PART 3:<br/>
         ?>
 PART 4:<br/>
     <?php
-    $months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
-    $daysinmonth = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-        echo "<table border =\"2\" style='border-collapse: collapse'>";
-         echo "<th>Days in a month</th>";
-        foreach($months as $month =>$currentmonth){
-            echo "<tr> \n";
-            echo "<td>$currentmonth</td> \n";
-            echo "<td>$daysinmonth[$month]</td>\n";
-        echo "</tr>"; 
+    $months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");//assigning the months of the years to months
+    $daysinmonth = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);//this array is listing how many days are in each month
+        echo "<table border =\"2\" style='border-collapse: collapse'>";// this is giving the border
+         echo "<th colspan=12>Days in a month</th>";//this is heading 
+         $that="";//declaring variable to be added to on line 91
+         $that2="";//declaring variable to be added to on line 92
+         foreach($months as $month =>$currentmonth){//iterating over the items in the loop of $months renamed as $month and $values are accessed using $currentmonth
+            
+            $that .= "<td>$currentmonth</td>"."\n"; //.=concatenating the nex array item//$currentmonth is pulling the month from the array months
+            $that2 .= "<td>$daysinmonth[$month]</td>";//.=concatenating the nex array item//getting the number of days in each month from $daysinmonth
+            
         }
-        echo "</table>";
+        echo "<tr>";//table row
+        echo $that;//getting the result from within the foreach loop and sending it the the browser
+        echo "</tr>";//end table row
+        echo "<tr>";//table row
+        echo $that2;//getting the result from within the foreach loop and sending it the the browser
+        echo "</tr>";//end table row
+    echo "</table>";//end table
     ?> 
     
 </body>
