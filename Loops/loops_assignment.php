@@ -77,17 +77,19 @@ PART 3:<br/>
         echo "</table>";//end of table
   
         ?>
-PART 4:
+PART 4:<br/>
     <?php
-    $months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
-    $daysinMonth = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-        echo "<table border =\"2\" style='border-collapse: collapse'>"
-        foreach($months as $month =>$daysinMonth){
-            
+    $months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+    $daysinmonth = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+        echo "<table border =\"2\" style='border-collapse: collapse'>";
+         echo "<th>Days in a month</th>";
+        foreach($months as $month =>$currentmonth){
+            echo "<tr> \n";
+            echo "<td>$currentmonth</td> \n";
+            echo "<td>$daysinmonth[$month]</td>\n";
+        echo "</tr>"; 
         }
-    
-    
-    
+        echo "</table>";
     ?> 
     
 </body>
