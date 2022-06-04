@@ -49,13 +49,13 @@
         <br/>
 
 PART 2:<br/>
-5 for loop finding sqrt: 
+5 for loop finding square: 
     <sup>
         <?php
         echo '<br>';//line break
         $squares= array(1,2,3,4,5,6,7,8,9,10,11,12);//assigning 1-2 to $ squares to be called later in the for loop
         for($i=0;$i<=11;$i++){//starts at 0 loops through less than or equal to 11 times.
-        echo sqrt($squares[$i]); //echo the sqrt of $squares
+        echo pow(2,$squares[$i]); //echo the square of $squares 1**2
         echo'<br>';//line break
         }   
         ?>
